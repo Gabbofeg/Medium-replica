@@ -47,11 +47,11 @@
 }
 
 #main-left{
-    position: relative;
-    width: 60%; 
+    width: 70%; 
     float:"left";
     margin-left: 200px;
     box-shadow: 4px 0px 2px -2px rgb(241, 241, 241);
+    flex-wrap: wrap;
 
 }
 
@@ -80,10 +80,19 @@
     height: 25px;
 }
 
+.news-container h2{
+    font-weight: bolder;
+    margin-top: 0;
+}
+
 .author-article{
     display: flex;
     align-items: center;
     gap: 6px;
+}
+
+.author-article span{
+    font-weight: bolder;
 }
 
 .news-footer{
@@ -124,7 +133,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    padding: 50px 50px 50px 0px;
+    padding: 50px 50px 0px 0px;
 }
 
 #bodysite{
@@ -132,11 +141,12 @@
 }
 
 #main-right{
-    width: 40%;
+    width: 30%;
     float: "right";
     margin-left: 50px;
     margin-right: 200px;
     padding-top: 100px;
+    flex-wrap: wrap;
 }
 
 #bodysite{
@@ -171,28 +181,24 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin-left: 10px;
 }
 
 .topics p{
     background-color: rgb(202, 202, 202);
     border-radius: 10px;
-    min-width: 100px;
+    max-width: 150px;
     text-align: center;
     padding: 5px 5px;
 }
 
 #recommended-topic{
     font-weight: bolder;
-}
-
-.mr-rec-topic{
     margin-top: 50px;
 }
 
 .mb-text{
     padding-bottom: 50px;
-    box-shadow: 0 4px 2px -2px rgb(241, 241, 241);
+    box-shadow: 0 4px 2px -2px rgb(241, 241, 241); 
 }
 
 
@@ -205,13 +211,14 @@
     display: flex;
     text-align: center;
     align-content: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .follow-btn{
     border: 1px solid black;
     align-content: center;
-    border-radius: 10px;
+    border-radius: 20px;
+    padding: 0px 5px;
 }
 
 .data-follow{
@@ -236,7 +243,12 @@
 }
 
 a{
-    display: flex;
     color: green;
-    justify-content: center;
+}
+
+.article-footer{
+    display: flex;
+    gap: 10px;
+    color: grey;
+    margin-top: 60px;
 }
