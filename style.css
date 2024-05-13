@@ -118,9 +118,16 @@ h3{
     padding: 50px 50px 50px 0px;
 }
 
+#bodysite{
+    display: flex;
+}
+
 #main-right{
     width: 40%;
     float: "right";
+    margin-left: 50px;
+    margin-right: 200px;
+    padding-top: 100px;
 }
 
 #bodysite{
@@ -137,19 +144,19 @@ h3{
     gap: 5px;
 }
 
-.text-container{
-    align-items: center;
-}
-
 .connect-btn{
-    display: flex;
-    width: 150px;
     padding: 5px 0px;
     border: 1px solid grey;
-    border-radius: 10px;
-    align-content: center;
+    border-radius: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+.center-container{
+    display: flex;
     justify-content: center;
 }
+
 
 .topics{
     display: flex;
@@ -160,9 +167,9 @@ h3{
 .topics p{
     background-color: rgb(202, 202, 202);
     border-radius: 10px;
-    width: 100px;
+    min-width: 100px;
     text-align: center;
-    padding: 5px 0px;
+    padding: 5px 5px;
 }
 
 #recommended-topic{
